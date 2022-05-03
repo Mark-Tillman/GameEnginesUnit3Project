@@ -9,14 +9,16 @@ public class AsteroidGenerator : MonoBehaviour
     public int fieldRadius = 100;
     public int asteroidCount = 500;
     public Vector3 maxSize = new Vector3(10, 10, 10);
+    public float maxSpeed = 50;
 
     // Start is called before the first frame update
     void Start()
     {
         for(int i = 0; i < asteroidCount; i++)
         {
-            Instantiate(asteroidPrefab, Random.insideUnitSphere * fieldRadius, Quaternion.identity);
-            asteroidPrefab.transform.localScale = Random.value * maxSize;
+            Transform asteroid = Instantiate(asteroidPrefab, Random.insideUnitSphere * fieldRadius, Quaternion.identity);
+            asteroid.localScale = Random.value * maxSize;
+            asteroid.GetComponent<Rigidbody>().AddForce(new Vector3(Random.rotation.x * maxSpeed, Random.rotation.y * maxSpeed, Random.rotation.z * maxSpeed));
         }
     }
 
