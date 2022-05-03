@@ -8,6 +8,7 @@ public class AsteroidGenerator : MonoBehaviour
     public Transform asteroidPrefab;
     public int fieldRadius = 100;
     public int asteroidCount = 500;
+    public Vector3 maxSize = new Vector3(10, 10, 10);
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,7 @@ public class AsteroidGenerator : MonoBehaviour
         for(int i = 0; i < asteroidCount; i++)
         {
             Instantiate(asteroidPrefab, Random.insideUnitSphere * fieldRadius, Quaternion.identity);
+            asteroidPrefab.transform.localScale = Random.value * maxSize;
         }
     }
 

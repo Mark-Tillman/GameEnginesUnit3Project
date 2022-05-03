@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.28911924, g: 0.24928546, b: 0.25873566, a: 1}
+  m_IndirectSpecularColor: {r: 0.5554539, g: 0.46115845, b: 0.5010605, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glideSpeed: 25
-  boostSpeed: 45
+  boostSpeed: 100
   pitchSpeed: 80
   rollSpeed: 200
   yawSpeed: 40
@@ -3828,8 +3828,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefab: {fileID: 494976, guid: fa49e460baf435b4780da7196c2ab473, type: 3}
-  fieldRadius: 200
+  fieldRadius: 700
   asteroidCount: 5000
+  maxSize: {x: 10, y: 10, z: 10}
 --- !u!4 &1048842704
 Transform:
   m_ObjectHideFlags: 0
@@ -5163,7 +5164,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477087820}
-  m_LocalRotation: {x: 0.41257218, y: 0.000000029172078, z: -0.0000000132124915, w: 0.910925}
+  m_LocalRotation: {x: 0.4125722, y: -0.000000010677724, z: 0.000000004836109, w: 0.9109249}
   m_LocalPosition: {x: 0, y: 8, z: -7.0200024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6134,7 +6135,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712064152}
-  m_LocalRotation: {x: 0.41257218, y: 0.000000029172078, z: -0.0000000132124915, w: 0.910925}
+  m_LocalRotation: {x: 0.4125722, y: -0.000000010677724, z: 0.000000004836109, w: 0.9109249}
   m_LocalPosition: {x: 0, y: 8, z: -7.0200024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
