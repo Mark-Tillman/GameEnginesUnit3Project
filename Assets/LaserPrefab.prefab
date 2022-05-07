@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6455291225848319656}
   m_Layer: 0
   m_Name: LaserPrefab
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,9 +49,9 @@ Rigidbody:
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!114 &6455291225848319659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,7 +64,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52f383c594724b40aaf44aa1ecd91f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootVelocity: 10000
+  impactPrefab: {fileID: 6502453391038805324, guid: dc009d232a3bd53468db0ab561276fb7, type: 3}
+  lifeTime: 5
 --- !u!136 &6455291225848319656
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -75,7 +76,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 1
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
